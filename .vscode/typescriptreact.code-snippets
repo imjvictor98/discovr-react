@@ -1,0 +1,22 @@
+{
+  "React Const Component": {
+    "prefix": "rncconst",
+    "body": [
+      "import React from 'react';",
+      "",
+      "type Props = {",
+      "};",
+      "",
+      "const ${1:ComponentName}: React.FC<Props> = ({ $2 }) => {",
+      "  return (",
+      "    <>",
+      "      $0",
+      "    </>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:ComponentName};"
+    ],
+    "description": "Create a Const Component with TypeScript"
+  }
+}

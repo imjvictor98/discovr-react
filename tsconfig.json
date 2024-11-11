@@ -1,6 +1,23 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
-  }
+    "strict": true,
+    "baseUrl": "./",
+    "paths": {
+      "@components": [
+        "./source/components/index.ts"
+      ],
+      "@utils": [
+        "./source/utils/index.ts"
+      ]
+    },
+  },
+  "include": [
+    "src/**/*",
+    "app/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
 }
